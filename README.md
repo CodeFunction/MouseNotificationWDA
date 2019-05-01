@@ -20,7 +20,7 @@ Helpful for when you don't want the mouse to be on other monitors but lost track
 
 ## To update application ###
 
-A) Just build the project and if using from location in project dir then close and start application again or replace MouseNotificationWDA.exe and used location.
+A) Just build the project and if using from location in project dir then close and start application again or replace MouseNotificationWDA.exe at used location.
 
 B) If a new version is available, just exit application, replace MouseNotificationWDA.exe, and then start it.
 
