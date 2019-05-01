@@ -26,7 +26,7 @@ B) If a new version is available, just exit application, replace MouseNotificati
 
 ### To remove application ###
 
-This application checks every start (in the event its moved) and adds a registry entry to Windows to auto start on Windows startup after a reboot or shutdown has occurred. Right click on the tray icon and click on clean exit to remove the registry entry and exit the application.
+This application checks every start (in the event its moved) and adds a registry entry to Windows to auto start on Windows startup after a reboot or shutdown has occurred. Right click on the tray icon and click on clean exit to remove the registry entry and exit the application. Finally, delete MouseNotificationWDA.exe.
 
 ### Possible improvements ###
 
