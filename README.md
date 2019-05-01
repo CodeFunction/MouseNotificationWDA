@@ -21,3 +21,9 @@ Helpful for when you don't want the mouse to be on other monitors but lost track
 ### To remove application ###
 
 This application checks every start (in the event its moved) and adds a registry entry to Windows to auto start on Windows startup after a reboot or shutdown has occurred. Right click on the tray icon and click on clean exit to remove the registry entry and exit the application.
+
+### Possible improvements ###
+
+1) Show arrow (or other) in direction of mouse
+
+2) Allow for displays that are rotated.
