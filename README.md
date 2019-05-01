@@ -18,7 +18,7 @@ Move the mouse off of the main screen onto another monitor and it will change to
 
 Helpful for when you don't want the mouse to be on other monitors but lost track of it. In a quick glance, you will know its on the main screen but blended in.
 
-## To update application ###
+### To update application ###
 
 A) Just build the project and if using from location in project dir then close and start application again or replace MouseNotificationWDA.exe at used location.
 
