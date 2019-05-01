@@ -1,5 +1,4 @@
 # MouseNotificationWDA
-Simple tray icon to quickly show if the mouse pointer is on the primary display
 
 ### How to obtain application ###
 
