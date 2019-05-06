@@ -22,6 +22,8 @@ WString createFullPathWithFile(String filename);
 String getCurrentPathOfApplication();
 String addFilenameToPathOfApplication(String filename);
 WString stringToWString(String s);
+String wstringToString(WString ws);
+bool validatePath(String s);
 
 Registry::Registry() {}
 
@@ -35,6 +37,8 @@ void Registry::runWithWinStartup()
 	HKEY hKey;
 	const String filename = appNameS + ".exe";
 	WString runFile = createFullPathWithFile(filename);
+
+	if (!validatePath(wstringToString(runFile))) return;
 
 	// Add to registry for run on Windows startup
 	LONG lnRes = RegOpenKeyExW(HKEY_CURRENT_USER,
@@ -65,6 +69,13 @@ WString createFullPathWithFile(String filename)
 	return ws;
 }
 
+bool validatePath(String s)
+{
+	String fixSystemProb = "\\WINDOWS\\system32\\"; // After two reboots this is the incorrect path it has
+	if (s.find(fixSystemProb) != std::string::npos) return false;
+	return true;
+}
+
 String getCurrentPathOfApplication()
 {
 	// Dynamically get path of application's current location
@@ -84,6 +95,12 @@ WString stringToWString(String s)
 {
 	WString ws(s.begin(), s.end());
 	return ws;
+}
+
+String wstringToString(WString ws)
+{
+	String s(ws.begin(), ws.end());
+	return s;
 }
 
 void Registry::removeStartupAndExit()

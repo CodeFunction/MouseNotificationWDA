@@ -23,6 +23,7 @@ void Message::displayMsgLPC(LPCWSTR msg)
 void Message::displayMsgString(std::string s)
 {
 	// Convert from string to LPCWSTR then display
+	
 	WString ws(s.begin(), s.end());
 	LPCWSTR msg = ws.c_str();
 	MessageBox(NULL, msg, _T("Message Box"), MB_OK | MB_SYSTEMMODAL);
