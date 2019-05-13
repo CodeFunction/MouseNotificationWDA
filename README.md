@@ -1,5 +1,7 @@
 # MouseNotificationWDA
 
+![demo.gif](https://github.com/CodeFunction/MouseNotificationWDA/blob/master/demo.gif)
+
 ### How to obtain application ###
 
 A) Project can be built using Visual Studio 2019 or newer and then use the resulting executable.
